@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: get code
         uses: actions/checkout@v3
+        with:
+          node-version: '24'
       - name: install dependencies
         run: npm install
       - name: running lint
