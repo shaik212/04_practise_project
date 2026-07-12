@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: install nodejs
         uses: actions/setup-node@v6
         with:
-          node-version: '24'
+          node-version: '20'
       - name: install dependencies
         run: npm install
       - name: running lint
